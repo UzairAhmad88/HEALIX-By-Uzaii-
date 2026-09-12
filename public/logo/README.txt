@@ -1,0 +1,1 @@
+Place approved Healix SVG/PNG logo assets here. Do not replace the provided logo with unapproved marks.

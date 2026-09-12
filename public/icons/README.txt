@@ -1,0 +1,1 @@
+Place favicon and approved icon assets here.

@@ -1,0 +1,1 @@
+Place optimized AVIF/WebP healthcare imagery here.
