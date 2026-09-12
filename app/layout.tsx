@@ -57,6 +57,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
+  },
+  icons: {
+    icon: [
+      { url: "/logo/logo.jpeg", type: "image/jpeg" },
+      { url: "/favicon.ico", type: "image/x-icon" }
+    ],
+    shortcut: "/logo/logo.jpeg",
+    apple: "/logo/logo.jpeg"
   }
 };
 
@@ -74,6 +82,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/logo/logo.jpeg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/logo/logo.jpeg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/logo/logo.jpeg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
