@@ -6,8 +6,8 @@ import { GeometricPattern } from "@/components/ui/GeometricPattern";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Healix Care | Healthcare Chain & Ecosystem Philosophy",
-  description: "Learn about Healix Care — our mission, healthcare philosophy, brand values, and connected chain connecting pharmacy, laboratory, and clinical care."
+  title: "About HEALIX | Healthcare Chain & Ecosystem Philosophy",
+  description: "Learn about HEALIX — our mission, healthcare philosophy, brand values, and connected chain connecting pharmacy, laboratory, and clinical care."
 };
 
 export default function AboutPage() {
@@ -19,13 +19,13 @@ export default function AboutPage() {
         <div className="container-healix relative z-10">
           <Reveal>
             <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">
-              About Healix Care
+              About HEALIX
             </span>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
               Healthcare With a Bigger Vision
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl md:leading-9">
-              Healix Care is building a modern consumer-facing healthcare destination where pharmacy, diagnostic laboratory testing, and clinical care come together.
+              HEALIX is building a modern consumer-facing healthcare destination where pharmacy, diagnostic laboratory testing, and clinical care come together.
             </p>
           </Reveal>
         </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
                   Designed around people, not paperwork.
                 </p>
                 <p className="mt-4 leading-7 text-white/75">
-                  Healthcare should not require navigating isolated silos or deciphering medical jargon without support. Healix Care frames every service through human clarity.
+                  Healthcare should not require navigating isolated silos or deciphering medical jargon without support. HEALIX frames every service through human clarity.
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <SectionHeading
                 eyebrow="Ecosystem Foundation"
                 title="Three care pillars under one cohesive brand."
-                description="Rather than offering isolated medical services, Healix Care coordinates everyday health needs across three vital pillars."
+                description="Rather than offering isolated medical services, HEALIX coordinates everyday health needs across three vital pillars."
               />
 
               <div className="mt-8 space-y-4">
@@ -112,7 +112,7 @@ export default function AboutPage() {
         <div className="container-healix">
           <Reveal>
             <SectionHeading
-              eyebrow="Healix Care Values"
+              eyebrow="HEALIX Values"
               title="Principles that guide our care model."
               description="Six foundational values that inform our approach to pharmaceutical, laboratory, and clinical services."
               align="center"
@@ -149,7 +149,7 @@ export default function AboutPage() {
             <span className="text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">Looking Ahead</span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-5xl">The Future of Connected Care</h2>
             <p className="mx-auto mt-4 max-w-2xl text-white/75">
-              Healix Care is building a modular healthcare chain architecture, preparing for future phases including location finders, digital lab report portals, and telehealth integration.
+              HEALIX is building a modular healthcare chain architecture, preparing for future phases including location finders, digital lab report portals, and telehealth integration.
             </p>
             <Link
               href="/contact"

@@ -22,7 +22,7 @@ export const articles: Article[] = [
     category: "Preventive Care",
     date: "September 10, 2026",
     readTime: "5 min read",
-    author: { name: "Healix Care Editorial Team", title: "Health & Wellness Communication" },
+    author: { name: "HEALIX Editorial Team", title: "Health & Wellness Communication" },
     excerpt:
       "Preventive healthcare is not just about avoiding illness; it's about actively establishing baseline health metrics through regular diagnostics and thoughtful clinical checkups.",
     keyTakeaways: [
@@ -49,7 +49,7 @@ export const articles: Article[] = [
         sectionTitle: "Building a Lifetime of Health Awareness",
         paragraphs: [
           "Preventive healthcare works best as an ongoing practice rather than an annual obligation. Open discussions with primary care physicians allow patients to ask questions without feeling rushed.",
-          "At Healix Care, our vision centers on making these preventive touchpoints accessible, comforting, and clear for every individual."
+          "At HEALIX, our vision centers on making these preventive touchpoints accessible, comforting, and clear for every individual."
         ]
       }
     ]
@@ -61,7 +61,7 @@ export const articles: Article[] = [
     category: "Health",
     date: "August 28, 2026",
     readTime: "4 min read",
-    author: { name: "Healix Care Editorial Team", title: "Patient Experience & Design" },
+    author: { name: "HEALIX Editorial Team", title: "Patient Experience & Design" },
     excerpt:
       "Medical literacy directly impacts health outcomes. When lab reports, prescription instructions, and clinical care plans are written clearly, patients feel confident and empowered.",
     keyTakeaways: [
@@ -93,7 +93,7 @@ export const articles: Article[] = [
     category: "Diagnostics",
     date: "August 15, 2026",
     readTime: "6 min read",
-    author: { name: "Healix Care Editorial Team", title: "Diagnostic Innovation" },
+    author: { name: "HEALIX Editorial Team", title: "Diagnostic Innovation" },
     excerpt:
       "Modern clinical decisions rely heavily on laboratory diagnostic precision. Explore how advanced biomarkers and streamlined lab workflows support accurate diagnoses.",
     keyTakeaways: [
@@ -113,7 +113,7 @@ export const articles: Article[] = [
         sectionTitle: "Speed and Accuracy in Laboratory Science",
         paragraphs: [
           "When health concerns arise, waiting days for laboratory results induces unnecessary stress. Streamlining sample processing without compromising quality control is a primary goal of modern laboratory engineering.",
-          "By implementing automated verification pipelines and double-checking algorithms, Healix Care Diagnostics ensures that accurate reports reach physicians rapidly."
+          "By implementing automated verification pipelines and double-checking algorithms, HEALIX Diagnostics ensures that accurate reports reach physicians rapidly."
         ]
       }
     ]
@@ -125,7 +125,7 @@ export const articles: Article[] = [
     category: "Pharmacy",
     date: "July 30, 2026",
     readTime: "5 min read",
-    author: { name: "Healix Care Editorial Team", title: "Pharmacy Practice & Advisory" },
+    author: { name: "HEALIX Editorial Team", title: "Pharmacy Practice & Advisory" },
     excerpt:
       "Pharmacists are often the most accessible healthcare professionals in the community. Discover how consultation-focused pharmacy care elevates overall patient health.",
     keyTakeaways: [

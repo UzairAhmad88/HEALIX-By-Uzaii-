@@ -15,44 +15,44 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Healix Care | Better Health Begins Here",
-    template: "%s | Healix Care"
+    default: "HEALIX | Better Health Begins Here",
+    template: "%s | HEALIX"
   },
   description:
-    "Healix Care brings pharmacy, diagnostic laboratory and clinical care services together through a modern, trusted healthcare experience.",
+    "HEALIX brings doctor consultations, diagnostic laboratory, pharmacy, and clinical care services together through a modern, trusted healthcare experience.",
   keywords: [
-    "Healix Care",
-    "Healthcare Chain",
+    "HEALIX",
+    "Healthcare Ecosystem",
+    "Doctor Consultations",
     "Pharmacy Services",
     "Diagnostic Laboratory",
     "Clinics Network",
     "Community Healthcare",
-    "Preventive Health",
-    "Modern Healthcare"
+    "Preventive Health"
   ],
-  authors: [{ name: "Healix Care Team" }],
-  creator: "Healix Care",
-  publisher: "Healix Care",
+  authors: [{ name: "HEALIX Team" }],
+  creator: "HEALIX",
+  publisher: "HEALIX",
   formatDetection: {
     email: false,
     address: false,
     telephone: false
   },
   openGraph: {
-    title: "Healix Care | Better Health Begins Here",
+    title: "HEALIX | Better Health Begins Here",
     description:
-      "Healix Care brings pharmacy, diagnostic laboratory and clinical care services together through a modern, trusted healthcare experience.",
+      "HEALIX brings doctor consultations, diagnostic laboratory, pharmacy, and clinical care services together through a modern, trusted healthcare experience.",
     url: siteUrl,
-    siteName: "Healix Care",
+    siteName: "HEALIX",
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Healix Care | Better Health Begins Here",
+    title: "HEALIX | Better Health Begins Here",
     description:
-      "Pharmacy, diagnostic laboratory and clinical care services connected in one modern healthcare destination.",
-    creator: "@healixcare"
+      "Doctor consultations, diagnostic laboratory, pharmacy, and clinical care services connected in one modern healthcare destination.",
+    creator: "@healixhealth"
   },
   robots: {
     index: true,
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Healix Care",
+    name: "HEALIX",
     url: siteUrl,
     logo: `${siteUrl}/logo/logo.jpeg`,
     description: "A modern consumer-facing healthcare chain connecting pharmacy, diagnostic laboratory, and clinical care services.",

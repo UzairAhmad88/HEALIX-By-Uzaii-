@@ -24,18 +24,18 @@ export function Logo({ variant = "dark", size = "md", className = "", onClick }:
       href="/"
       onClick={onClick}
       className={`inline-flex items-center gap-2.5 sm:gap-3 font-extrabold tracking-tight transition hover:opacity-90 ${className}`}
-      aria-label="Healix Care - Better Health Begins Here"
+      aria-label="HEALIX - Better Health Begins Here"
     >
       <Image
         src="/logo/logo.jpeg"
-        alt="Healix Care Logo"
+        alt="HEALIX Logo"
         width={currentSize.imageSize}
         height={currentSize.imageSize}
         priority
         className="rounded-xl object-cover shadow-sm transition-transform hover:scale-105 shrink-0"
       />
       <span className={`font-black tracking-[0.05em] whitespace-nowrap ${currentSize.text} ${textColor}`}>
-        HEALIX <span className="text-[var(--healix-lime)]">CARE</span>
+        HEAL<span className="text-[var(--healix-lime)]">IX</span>
       </span>
     </Link>
   );

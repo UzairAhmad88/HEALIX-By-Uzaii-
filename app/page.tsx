@@ -34,7 +34,7 @@ export default function HomePage() {
       <aside aria-label="Brand Announcement" className="bg-[var(--healix-lime)] py-2.5 text-center text-xs font-black uppercase tracking-[0.18em] text-[var(--healix-text)]">
         <div className="container-healix flex items-center justify-center gap-2">
           <Activity size={14} />
-          <span>Introducing Healix Care — A Connected Healthcare Chain</span>
+          <span>Introducing HEALIX — A Connected Healthcare Chain</span>
           <span className="hidden sm:inline">· Pharmacy · Laboratory · Clinics</span>
         </div>
       </aside>
@@ -47,7 +47,7 @@ export default function HomePage() {
           {/* Left Hero Content */}
           <Reveal direction="up" className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[var(--healix-lime)] backdrop-blur-md">
-              <Activity size={14} /> HEALIX CARE
+              <Activity size={14} /> HEALIX
             </div>
 
             <h1 className="display-title mt-6 max-w-3xl font-extrabold tracking-tight text-white leading-[1.04]">
@@ -72,7 +72,7 @@ export default function HomePage() {
                 href="/about"
                 className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-8 py-4 text-base font-extrabold text-white transition-all duration-200 hover:bg-white/15 hover:border-white/50"
               >
-                <span>Discover Healix Care</span>
+                <span>Discover HEALIX</span>
               </Link>
             </div>
 
@@ -99,7 +99,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/hero-healthcare.jpg"
-                  alt="Modern Healix Care UK healthcare environment"
+                  alt="Modern HEALIX UK healthcare environment"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 500px"
@@ -152,7 +152,7 @@ export default function HomePage() {
                   <div className="relative mt-6 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-[#D8E7E0]">
                     <Image
                       src="/images/pharmacy-interior.jpg"
-                      alt="Healix Care Community Pharmacy"
+                      alt="HEALIX Community Pharmacy"
                       fill
                       sizes="(max-width: 768px) 100vw, 380px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -192,7 +192,7 @@ export default function HomePage() {
                   <div className="relative mt-6 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-[#D8E7E0]">
                     <Image
                       src="/images/laboratory-diagnostics.jpg"
-                      alt="Healix Care Laboratory Diagnostics"
+                      alt="HEALIX Laboratory Diagnostics"
                       fill
                       sizes="(max-width: 768px) 100vw, 380px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -232,7 +232,7 @@ export default function HomePage() {
                   <div className="relative mt-6 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-[#D8E7E0]">
                     <Image
                       src="/images/clinic-consultation.jpg"
-                      alt="Healix Care Medical Clinic Consultation"
+                      alt="HEALIX Medical Clinic Consultation"
                       fill
                       sizes="(max-width: 768px) 100vw, 380px"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -262,7 +262,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="Core Values"
-              title="Why Healix Care?"
+              title="Why HEALIX?"
               description="Healthcare should feel simpler. Six principles that define our care model."
               align="center"
             />
@@ -356,7 +356,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/pharmacy-interior.jpg"
-                  alt="Healix Care Pharmacy Consultation Room"
+                  alt="HEALIX Pharmacy Consultation Room"
                   fill
                   sizes="(max-width: 1024px) 100vw, 550px"
                   className="object-cover"
@@ -412,7 +412,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/laboratory-diagnostics.jpg"
-                  alt="Healix Care Laboratory Testing Equipment"
+                  alt="HEALIX Laboratory Testing Equipment"
                   fill
                   sizes="(max-width: 1024px) 100vw, 550px"
                   className="object-cover"
@@ -433,7 +433,7 @@ export default function HomePage() {
               </span>
               <h2 className="section-title mt-4 text-[#10231E]">Care that starts with listening.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Patient-centered clinical care in a welcoming, modern environment. Healix Care Clinics connect individuals and families with compassionate general practitioners and specialists.
+                Patient-centered clinical care in a welcoming, modern environment. HEALIX Clinics connect individuals and families with compassionate general practitioners and specialists.
               </p>
 
               <div className="mt-8 grid grid-cols-2 gap-4">
@@ -464,7 +464,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/clinic-consultation.jpg"
-                  alt="Healix Care Clinic Consultation Room"
+                  alt="HEALIX Clinic Consultation Room"
                   fill
                   sizes="(max-width: 1024px) 100vw, 550px"
                   className="object-cover"
@@ -497,7 +497,7 @@ export default function HomePage() {
               {
                 step: "02",
                 title: "CONNECT",
-                desc: "Access the right Healix Care service—pharmacy advisory, diagnostic lab, or clinic consult."
+                desc: "Access the right HEALIX service—pharmacy advisory, diagnostic lab, or clinic consult."
               },
               {
                 step: "03",
@@ -532,7 +532,7 @@ export default function HomePage() {
               </span>
               <h2 className="section-title mt-4 text-[#10231E]">Healthcare, closer to your community.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Healix Care is expanding as a physical and digital healthcare chain. Our goal is to bring connected pharmacy, lab testing, and clinic care to your neighborhood.
+                HEALIX is expanding as a physical and digital healthcare chain. Our goal is to bring connected pharmacy, lab testing, and clinic care to your neighborhood.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -550,7 +550,7 @@ export default function HomePage() {
                 <Clock className="size-5 text-[#075A46]" />
                 <div>
                   <p className="text-xs font-extrabold uppercase tracking-wider text-[#0E745B]">Branch Expansion</p>
-                  <p className="text-sm font-extrabold text-[#10231E]">More Healix Care locations coming soon</p>
+                  <p className="text-sm font-extrabold text-[#10231E]">More HEALIX locations coming soon</p>
                 </div>
               </div>
             </div>
@@ -565,7 +565,7 @@ export default function HomePage() {
                 </span>
                 <h3 className="mt-6 text-2xl font-extrabold">Healthcare Chain Network</h3>
                 <p className="mt-3 leading-7 text-white/75">
-                  Future platform updates will feature an interactive location finder to locate nearby Healix Care pharmacies, labs, and clinics with real-time hours.
+                  Future platform updates will feature an interactive location finder to locate nearby HEALIX pharmacies, labs, and clinics with real-time hours.
                 </p>
                 <div className="mt-8 grid grid-cols-3 gap-3 text-center">
                   <div className="rounded-2xl bg-white/10 p-4 backdrop-blur">
@@ -659,14 +659,14 @@ export default function HomePage() {
                 Better health starts with better care.
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
-                Discover a more connected healthcare experience with Healix Care.
+                Discover a more connected healthcare experience with HEALIX.
               </p>
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2.5 rounded-full bg-[var(--healix-lime)] px-8 py-4 text-base font-extrabold text-[#10231E] transition-all hover:bg-white hover:shadow-xl"
                 >
-                  <span>Talk to Healix Care</span>
+                  <span>Talk to HEALIX</span>
                   <ArrowRight size={18} />
                 </Link>
                 <Link

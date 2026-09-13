@@ -17,7 +17,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "healix-care-pharmacy",
-    title: "Healix Care Modern Pharmacy Experience",
+    title: "HEALIX Modern Pharmacy Experience",
     subtitle: "Reimagining everyday community pharmacy through transparent advice and modern presentation",
     category: "Pharmacy",
     year: "2026",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     solution:
       "A human-centered pharmacy framework featuring clear dosage guides, unhurried patient consultations, and cold-chain safety protocols.",
     impact: "Portfolio concept — verified operational outcomes will be added when available.",
-    tags: ["Pharmacy", "Service Design", "Accessibility", "Healix Care"],
+    tags: ["Pharmacy", "Service Design", "Accessibility", "HEALIX"],
     keyFeatures: [
       "Intuitive medication category organization",
       "Dedicated patient consultation space",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   },
   {
     slug: "healix-care-diagnostics",
-    title: "Healix Care Diagnostic Clarity System",
+    title: "HEALIX Diagnostic Clarity System",
     subtitle: "Making complex laboratory data accessible and understandable for patients",
     category: "Laboratory",
     year: "2026",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     solution:
       "A modern laboratory service concept that delivers clean, highly readable diagnostic summaries directly integrated with clinic records.",
     impact: "Portfolio concept — verified operational outcomes will be added when available.",
-    tags: ["Laboratory", "Diagnostics", "Data Visualization", "Healix Care"],
+    tags: ["Laboratory", "Diagnostics", "Data Visualization", "HEALIX"],
     keyFeatures: [
       "Plain-language diagnostic summaries",
       "Visual biomarker reference indicators",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
   },
   {
     slug: "healix-care-clinics",
-    title: "Healix Care Human-Centered Clinics",
+    title: "HEALIX Human-Centered Clinics",
     subtitle: "Calm, welcoming clinical care spaces connected to diagnostic labs",
     category: "Clinics",
     year: "2026",
@@ -80,11 +80,11 @@ export const projects: Project[] = [
     challenge:
       "Medical clinics frequently suffer from chaotic waiting rooms, hurried consultations, and disconnected diagnostic workflows.",
     approach:
-      "We crafted a clinical model focused on warmth, quiet environments, and real-time synchronization with nearby Healix Care labs and pharmacies.",
+      "We crafted a clinical model focused on warmth, quiet environments, and real-time synchronization with nearby HEALIX labs and pharmacies.",
     solution:
       "A multi-specialty clinical network prototype featuring unhurried 30-minute doctor visits, digital intake check-ins, and clear care plans.",
     impact: "Portfolio concept — verified operational outcomes will be added when available.",
-    tags: ["Clinics", "Patient Experience", "Primary Care", "Healix Care"],
+    tags: ["Clinics", "Patient Experience", "Primary Care", "HEALIX"],
     keyFeatures: [
       "Calm reception and intake design",
       "Integrated lab test ordering during consults",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
   },
   {
     slug: "healix-care-network-pass",
-    title: "Healix Care Connected Platform Architecture",
+    title: "HEALIX Connected Platform Architecture",
     subtitle: "The underlying technological foundation connecting pharmacy, lab, and clinic",
     category: "Technology",
     year: "2026",
@@ -111,7 +111,7 @@ export const projects: Project[] = [
     solution:
       "A future-proof technological blueprint that gives patients control over their records while allowing verified care teams instant access.",
     impact: "Portfolio concept — verified operational outcomes will be added when available.",
-    tags: ["Technology", "System Architecture", "Security", "Healix Care"],
+    tags: ["Technology", "System Architecture", "Security", "HEALIX"],
     keyFeatures: [
       "Consent-driven health record sharing",
       "Unified API layer for lab & pharmacy sync",

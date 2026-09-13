@@ -5,23 +5,19 @@ import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[var(--healix-green)] text-white">
-      {/* Decorative background Healix X motif */}
-      <div className="pointer-events-none absolute -right-24 -top-24 size-96 rounded-full border border-white/5 opacity-40" />
-      <div className="pointer-events-none absolute -bottom-32 left-1/2 size-[500px] -translate-x-1/2 rounded-full border border-white/5 opacity-30" />
-
       <div className="container-healix relative z-10 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Brand Info */}
           <div className="lg:col-span-4">
             <Logo variant="light" size="lg" />
             <p className="mt-6 max-w-sm text-base leading-7 text-white/75">
-              Better Health Begins Here. A modern healthcare destination bringing pharmacy, diagnostic laboratory, and clinical care together in your community.
+              Better Health Begins Here. A modern healthcare destination bringing doctors, diagnostic laboratory, pharmacy, and clinical care together in your community.
             </p>
 
             <div className="mt-8 space-y-3 text-sm text-white/70">
               <div className="flex items-center gap-3">
                 <Mail size={16} className="text-[var(--healix-lime)]" />
-                <span>contact@healixcare.health</span>
+                <span>contact@healix.health</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-[var(--healix-lime)]" />
@@ -29,7 +25,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-[var(--healix-lime)]" />
-                <span>Healix Care Healthcare Center</span>
+                <span>HEALIX Healthcare Center</span>
               </div>
             </div>
           </div>
@@ -40,7 +36,7 @@ export function Footer() {
               <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">Company</h3>
               <ul className="mt-6 space-y-3.5 text-sm font-semibold text-white/75">
                 <li>
-                  <Link href="/about" className="transition hover:text-white">About Healix Care</Link>
+                  <Link href="/about" className="transition hover:text-white">About HEALIX</Link>
                 </li>
                 <li>
                   <Link href="/services" className="transition hover:text-white">Healthcare Services</Link>
@@ -115,7 +111,7 @@ export function Footer() {
 
         {/* Bottom Legal bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs font-semibold text-white/50 sm:flex-row">
-          <p>© 2026 Healix Care. All rights reserved.</p>
+          <p>© 2026 HEALIX. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="transition hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="transition hover:text-white">Terms & Conditions</Link>
