@@ -6,8 +6,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Services | Healix Care",
-  description: "Discover Healix Care Pharmacy — a modern pharmaceutical care concept focused on medication advisory, prescription safety verification, and everyday wellness support."
+  title: "Pharmacy Services | Healix",
+  description: "Discover Healix Pharmacy — a modern pharmaceutical care concept focused on medication advisory, prescription safety verification, and everyday wellness support."
 };
 
 export default function PharmacyPage() {
@@ -18,7 +18,7 @@ export default function PharmacyPage() {
         <div className="container-healix relative z-10">
           <Reveal>
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">
-              <Pill size={16} /> Healix Care Pharmacy
+              <Pill size={16} /> Healix Pharmacy
             </div>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
               Modern Pharmacy Care, Designed Around You.
@@ -38,7 +38,7 @@ export default function PharmacyPage() {
               <span className="text-xs font-extrabold uppercase tracking-[0.2em] text-[var(--healix-green-2)]">Pharmacy Overview</span>
               <h2 className="section-title mt-3">Rx Guidance Without Confusion</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Taking prescribed medication should never feel confusing. Healix Care Pharmacy provides clear visual dosage schedules, side-effect explanations, and private pharmacist consultations.
+                Taking prescribed medication should never feel confusing. Healix Pharmacy provides clear visual dosage schedules, side-effect explanations, and private pharmacist consultations.
               </p>
               <div className="mt-8 space-y-3.5">
                 {[
@@ -117,10 +117,10 @@ export default function PharmacyPage() {
               </span>
               <h3 className="mt-6 text-3xl font-extrabold">Today, Pharmacy. Tomorrow, More Ways to Care.</h3>
               <p className="mt-4 leading-7 text-white/80">
-                Healix Care is focused on building an exceptional pharmacy experience today, while laying the groundwork for integrated healthcare services in the future.
+                Healix is focused on building an exceptional pharmacy experience today, while laying the groundwork for integrated healthcare services in the future.
               </p>
               <div className="mt-8 rounded-2xl bg-white/10 p-6 backdrop-blur">
-                <p className="text-xs font-mono text-[var(--healix-lime)]">Healix Care Pharmacy is dedicated to community health access and prescription authenticity.</p>
+                <p className="text-xs font-mono text-[var(--healix-lime)]">Healix Pharmacy is dedicated to community health access and prescription authenticity.</p>
               </div>
             </div>
           </Reveal>
@@ -147,7 +147,7 @@ export default function PharmacyPage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 rounded-full bg-[#075A46] px-7 py-3.5 font-extrabold text-white transition hover:bg-[#0E745B]"
                 >
-                  <span>Contact Healix Care</span>
+                  <span>Contact Healix</span>
                   <ArrowRight size={16} />
                 </Link>
               </div>

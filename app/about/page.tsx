@@ -5,8 +5,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Healix Care | Modern Pharmacy Brand",
-  description: "Learn about Healix Care — our mission, pharmacy-first philosophy, core values, and vision for accessible everyday healthcare."
+  title: "About Healix | Modern Pharmacy Brand",
+  description: "Learn about Healix — our mission, pharmacy-first philosophy, core values, and vision for accessible everyday healthcare."
 };
 
 export default function AboutPage() {
@@ -17,13 +17,13 @@ export default function AboutPage() {
         <div className="container-healix relative z-10">
           <Reveal>
             <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">
-              About Healix Care
+              About Healix
             </span>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
               A Modern Pharmacy Brand Designed Around You.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl md:leading-9">
-              Healix Care is building a modern consumer-facing pharmacy experience where authentic medications, certified advisory, and human care come together.
+              Healix is building a modern consumer-facing pharmacy experience where authentic medications, certified advisory, and human care come together.
             </p>
           </Reveal>
         </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                   Designed around people, not transaction speed.
                 </p>
                 <p className="mt-4 leading-7 text-white/75">
-                  Everyday healthcare should not require navigating confusion or feeling rushed. Healix Care frames pharmacy support through clarity and unhurried listening.
+                  Everyday healthcare should not require navigating confusion or feeling rushed. Healix frames pharmacy support through clarity and unhurried listening.
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
               href="/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-[var(--healix-lime)] px-8 py-3.5 font-extrabold text-[#10231E] transition hover:bg-white"
             >
-              <span>Contact Healix Care</span>
+              <span>Contact Healix</span>
               <ArrowRight size={18} />
             </Link>
           </Reveal>

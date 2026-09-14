@@ -4,8 +4,8 @@ import { Mail, Phone } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Healix Care",
-  description: "Connect with the Healix Care team for pharmacy support, general inquiries, partnerships, and business opportunities."
+  title: "Contact Us | Healix",
+  description: "Connect with the Healix team for pharmacy support, general inquiries, partnerships, and business opportunities."
 };
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                   >
                     +92 316 0000000
                   </a>
-                  <p className="mt-1 text-xs text-slate-500">Call Healix Care for direct inquiries.</p>
+                  <p className="mt-1 text-xs text-slate-500">Call Healix for direct inquiries.</p>
                 </div>
               </div>
 

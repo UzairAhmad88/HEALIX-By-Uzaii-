@@ -15,13 +15,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "HEALIX CARE | Better Health Begins Here",
-    template: "%s | HEALIX CARE"
+    default: "HEALIX | Better Health Begins Here",
+    template: "%s | HEALIX"
   },
   description:
-    "Healix Care is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
+    "Healix is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
   keywords: [
-    "HEALIX CARE",
+    "HEALIX",
     "Pharmacy Services",
     "Authentic Medicines",
     "Community Healthcare",
@@ -29,29 +29,29 @@ export const metadata: Metadata = {
     "Everyday Wellness",
     "Preventive Health"
   ],
-  authors: [{ name: "HEALIX CARE Team" }],
-  creator: "HEALIX CARE",
-  publisher: "HEALIX CARE",
+  authors: [{ name: "HEALIX Team" }],
+  creator: "HEALIX",
+  publisher: "HEALIX",
   formatDetection: {
     email: false,
     address: false,
     telephone: false
   },
   openGraph: {
-    title: "HEALIX CARE | Better Health Begins Here",
+    title: "HEALIX | Better Health Begins Here",
     description:
-      "Healix Care is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
+      "Healix is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
     url: siteUrl,
-    siteName: "HEALIX CARE",
+    siteName: "HEALIX",
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "HEALIX CARE | Better Health Begins Here",
+    title: "HEALIX | Better Health Begins Here",
     description:
       "Modern pharmacy care designed around your everyday health, with trusted support when you need it.",
-    creator: "@healixcare"
+    creator: "@healix"
   },
   robots: {
     index: true,
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "HEALIX CARE",
+    name: "HEALIX",
     url: siteUrl,
     logo: `${siteUrl}/logo/logo.jpeg`,
     description: "A modern pharmacy-first healthcare brand providing verified medications, everyday health essentials, and certified advisory.",

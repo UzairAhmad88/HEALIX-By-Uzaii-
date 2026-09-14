@@ -26,7 +26,7 @@ export default function PortfolioPage() {
               Initiatives & Concepts
             </span>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
-              Healix Care Initiatives Portfolio
+              Healix Initiatives Portfolio
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
               Explore our pharmacy experience design concepts, accessibility frameworks, and digital care infrastructure.

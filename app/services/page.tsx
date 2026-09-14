@@ -5,8 +5,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services Overview | Healix Care",
-  description: "Explore Healix Care services — modern pharmacy advisory, prescription guidance, and upcoming clinical care directions."
+  title: "Services Overview | Healix",
+  description: "Explore Healix services — modern pharmacy advisory, prescription guidance, and upcoming clinical care directions."
 };
 
 export default function ServicesPage() {
@@ -23,7 +23,7 @@ export default function ServicesPage() {
               Pharmacy First Healthcare Experience
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl md:leading-9">
-              Discover how Healix Care brings modern pharmacy support, verified prescription guidance, and accessible health essentials to your community.
+              Discover how Healix brings modern pharmacy support, verified prescription guidance, and accessible health essentials to your community.
             </p>
           </Reveal>
         </div>
@@ -99,7 +99,7 @@ export default function ServicesPage() {
               </span>
               <h2 className="mt-4 text-2xl font-extrabold text-[#10231E] md:text-3xl">More care is coming.</h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-slate-600">
-                Healix Care is growing beyond pharmacy, with clinical care planned as part of our future healthcare journey.
+                Healix is growing beyond pharmacy, with clinical care planned as part of our future healthcare journey.
               </p>
               <div className="mt-8">
                 <Link
@@ -121,7 +121,7 @@ export default function ServicesPage() {
           <Reveal>
             <h2 className="text-3xl font-extrabold md:text-5xl">Have a Question About Our Services?</h2>
             <p className="mx-auto mt-4 max-w-xl text-white/80">
-              Get in touch with the Healix Care team directly by phone or email.
+              Get in touch with the Healix team directly by phone or email.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm font-extrabold">
               <a href="tel:+923160000000" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white backdrop-blur hover:bg-white/20">

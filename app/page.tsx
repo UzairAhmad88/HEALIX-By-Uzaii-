@@ -33,7 +33,7 @@ export default function HomePage() {
       <aside aria-label="Brand Announcement" className="bg-[var(--healix-lime)] py-2.5 text-center text-xs font-black uppercase tracking-[0.18em] text-[#10231E]">
         <div className="container-healix flex items-center justify-center gap-2">
           <Activity size={14} />
-          <span>Introducing Healix Care — A Modern Pharmacy Experience</span>
+          <span>Introducing Healix — A Modern Pharmacy Experience</span>
           <span className="hidden sm:inline">· Professional Support · Everyday Health</span>
         </div>
       </aside>
@@ -44,7 +44,7 @@ export default function HomePage() {
           {/* Left Hero Content */}
           <Reveal direction="up" className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[var(--healix-lime)] backdrop-blur-md">
-              <Activity size={14} /> HEALIX CARE
+              <Activity size={14} /> HEALIX
             </div>
 
             <h1 className="display-title mt-6 max-w-3xl font-extrabold tracking-tight text-white leading-[1.04]">
@@ -96,7 +96,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/pharmacy-interior.jpg"
-                  alt="Modern Healix Care pharmacy environment"
+                  alt="Modern Healix pharmacy environment"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 500px"
@@ -118,23 +118,23 @@ export default function HomePage() {
         <div className="container-healix">
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="rounded-full bg-[#EAF4EF] px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#0E745B] border border-[#D8E7E0]">
-              Healix Care Pharmacy
+              Healix Pharmacy
             </span>
             <h2 className="section-title mt-4 text-[#10231E]">Your everyday healthcare, closer to you.</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Healix Care brings a modern pharmacy experience together with professional support, everyday health essentials and a focus on the people we serve.
+              Healix brings a modern pharmacy experience together with professional support, everyday health essentials and a focus on the people we serve.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* 03 WHY HEALIX CARE (White - Asymmetric Layout) */}
+      {/* 03 WHY HEALIX (White - Asymmetric Layout) */}
       <section className="section-pad bg-white">
         <div className="container-healix">
           <Reveal>
             <SectionHeading
               eyebrow="Our Principles"
-              title="Why Healix Care?"
+              title="Why Healix?"
               description="Six core principles defining our approach to modern pharmacy care."
               align="center"
             />
@@ -189,7 +189,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2.5rem] border border-[#D8E7E0] shadow-lg">
               <Image
                 src="/images/pharmacy-interior.jpg"
-                alt="Healix Care Pharmacy Consultation Space"
+                alt="Healix Pharmacy Consultation Space"
                 fill
                 sizes="(max-width: 1024px) 100vw, 550px"
                 className="object-cover"
@@ -340,7 +340,7 @@ export default function HomePage() {
               </span>
               <h2 className="mt-5 text-2xl font-extrabold text-[#10231E] md:text-4xl">More care is coming.</h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-slate-600">
-                We&apos;re looking ahead to a future where Healix Care can bring pharmacy and clinical care even closer together.
+                We&apos;re looking ahead to a future where Healix can bring pharmacy and clinical care even closer together.
               </p>
               <div className="mt-8">
                 <Link
@@ -399,7 +399,7 @@ export default function HomePage() {
                 Better health begins with a conversation.
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-white/80 md:text-lg">
-                Reach out to the Healix Care team for general questions, pharmacy inquiries, or partnership discussions.
+                Reach out to the Healix team for general questions, pharmacy inquiries, or partnership discussions.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm font-extrabold">
@@ -424,7 +424,7 @@ export default function HomePage() {
                   href="/contact"
                   className="inline-flex items-center gap-2.5 rounded-full bg-[var(--healix-lime)] px-8 py-4 text-base font-extrabold text-[#10231E] transition-all hover:bg-white hover:shadow-xl"
                 >
-                  <span>Contact Healix Care</span>
+                  <span>Contact Healix</span>
                   <ArrowRight size={18} />
                 </Link>
               </div>

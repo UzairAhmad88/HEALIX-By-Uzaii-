@@ -17,7 +17,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "healix-care-pharmacy",
-    title: "Healix Care Modern Pharmacy Experience",
+    title: "Healix Modern Pharmacy Experience",
     subtitle: "Reimagining everyday community pharmacy through transparent advice and modern presentation",
     category: "Pharmacy",
     year: "2026",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     solution:
       "A human-centered pharmacy framework featuring clear dosage guides, unhurried patient consultations, and cold-chain safety protocols.",
     impact: "Brand concept — verified operational outcomes will be added when available.",
-    tags: ["Pharmacy", "Service Design", "Accessibility", "Healix Care"],
+    tags: ["Pharmacy", "Service Design", "Accessibility", "Healix"],
     keyFeatures: [
       "Intuitive medication category organization",
       "Dedicated patient consultation space",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
   },
   {
     slug: "healix-care-network-pass",
-    title: "Healix Care Digital Architecture",
+    title: "Healix Digital Architecture",
     subtitle: "The underlying technological foundation for prescription verification and patient support",
     category: "Technology",
     year: "2026",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     solution:
       "A future-proof technological blueprint that gives patients clarity over their pharmacy care.",
     impact: "Brand concept — verified operational outcomes will be added when available.",
-    tags: ["Technology", "System Architecture", "Security", "Healix Care"],
+    tags: ["Technology", "System Architecture", "Security", "Healix"],
     keyFeatures: [
       "Consent-driven health information security",
       "Unified prescription verification API layer",

@@ -22,7 +22,7 @@ export const articles: Article[] = [
     category: "Preventive Care",
     date: "September 10, 2026",
     readTime: "5 min read",
-    author: { name: "Healix Care Editorial Team", title: "Health & Wellness Advisory" },
+    author: { name: "Healix Editorial Team", title: "Health & Wellness Advisory" },
     excerpt:
       "Everyday health is not just about reacting when you feel unwell; it's about actively managing wellness through thoughtful pharmacy care and daily health habits.",
     keyTakeaways: [
@@ -53,7 +53,7 @@ export const articles: Article[] = [
     category: "Health",
     date: "August 28, 2026",
     readTime: "4 min read",
-    author: { name: "Healix Care Editorial Team", title: "Patient Care Experience" },
+    author: { name: "Healix Editorial Team", title: "Patient Care Experience" },
     excerpt:
       "Health literacy directly impacts prescription safety. When medication guidelines and dosage instructions are written clearly, patients feel confident and empowered.",
     keyTakeaways: [
@@ -66,7 +66,7 @@ export const articles: Article[] = [
         sectionTitle: "Why Clear Medication Guidance Matters",
         paragraphs: [
           "For decades, pharmacy communication often favored technical language over patient clarity. Receiving prescription bottles with ambiguous directions leads to uncertainty.",
-          "At Healix Care, true pharmacy excellence is demonstrated through human clarity. Explaining dosage schedules in plain language enables patients to manage their care safely."
+          "At Healix, true pharmacy excellence is demonstrated through human clarity. Explaining dosage schedules in plain language enables patients to manage their care safely."
         ]
       }
     ]
@@ -78,7 +78,7 @@ export const articles: Article[] = [
     category: "Pharmacy",
     date: "July 30, 2026",
     readTime: "5 min read",
-    author: { name: "Healix Care Editorial Team", title: "Pharmacy Advisory" },
+    author: { name: "Healix Editorial Team", title: "Pharmacy Advisory" },
     excerpt:
       "Pharmacists are often the most accessible healthcare professionals in the community. Discover how consultation-focused pharmacy care elevates overall patient health.",
     keyTakeaways: [
