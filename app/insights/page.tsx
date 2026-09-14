@@ -12,7 +12,6 @@ const categories = [
   "All",
   "Preventive Care",
   "Health",
-  "Diagnostics",
   "Pharmacy",
   "Clinics",
   "Technology",
@@ -42,7 +41,7 @@ export default function InsightsPage() {
               Healix Insights & Wellness
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
-              Thoughtful healthcare education, clear explanations of diagnostic science, and wellness guidance written for patients.
+              Thoughtful healthcare education, clear medication guidance, and wellness articles written for patients.
             </p>
           </Reveal>
         </div>

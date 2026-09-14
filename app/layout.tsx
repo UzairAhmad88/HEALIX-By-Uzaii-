@@ -15,44 +15,43 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "HEALIX | Better Health Begins Here",
-    template: "%s | HEALIX"
+    default: "HEALIX CARE | Better Health Begins Here",
+    template: "%s | HEALIX CARE"
   },
   description:
-    "HEALIX brings doctor consultations, diagnostic laboratory, pharmacy, and clinical care services together through a modern, trusted healthcare experience.",
+    "Healix Care is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
   keywords: [
-    "HEALIX",
-    "Healthcare Ecosystem",
-    "Doctor Consultations",
+    "HEALIX CARE",
     "Pharmacy Services",
-    "Diagnostic Laboratory",
-    "Clinics Network",
+    "Authentic Medicines",
     "Community Healthcare",
+    "Pharmacist Consultation",
+    "Everyday Wellness",
     "Preventive Health"
   ],
-  authors: [{ name: "HEALIX Team" }],
-  creator: "HEALIX",
-  publisher: "HEALIX",
+  authors: [{ name: "HEALIX CARE Team" }],
+  creator: "HEALIX CARE",
+  publisher: "HEALIX CARE",
   formatDetection: {
     email: false,
     address: false,
     telephone: false
   },
   openGraph: {
-    title: "HEALIX | Better Health Begins Here",
+    title: "HEALIX CARE | Better Health Begins Here",
     description:
-      "HEALIX brings doctor consultations, diagnostic laboratory, pharmacy, and clinical care services together through a modern, trusted healthcare experience.",
+      "Healix Care is a modern pharmacy-first healthcare brand providing verified medications, health essentials, and certified advisory.",
     url: siteUrl,
-    siteName: "HEALIX",
+    siteName: "HEALIX CARE",
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "HEALIX | Better Health Begins Here",
+    title: "HEALIX CARE | Better Health Begins Here",
     description:
-      "Doctor consultations, diagnostic laboratory, pharmacy, and clinical care services connected in one modern healthcare destination.",
-    creator: "@healixhealth"
+      "Modern pharmacy care designed around your everyday health, with trusted support when you need it.",
+    creator: "@healixcare"
   },
   robots: {
     index: true,
@@ -72,10 +71,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "HEALIX",
+    name: "HEALIX CARE",
     url: siteUrl,
     logo: `${siteUrl}/logo/logo.jpeg`,
-    description: "A modern consumer-facing healthcare chain connecting pharmacy, diagnostic laboratory, and clinical care services.",
+    description: "A modern pharmacy-first healthcare brand providing verified medications, everyday health essentials, and certified advisory.",
     slogan: "Better Health Begins Here"
   };
 

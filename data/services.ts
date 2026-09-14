@@ -3,7 +3,7 @@ export type Service = {
   title: string;
   tagline: string;
   description: string;
-  category: "Pharmacy" | "Laboratory" | "Clinics";
+  category: "Pharmacy" | "Clinics";
   href: string;
   iconName: string;
   features: string[];
@@ -55,47 +55,6 @@ export const services: Service[] = [
     ]
   },
   {
-    id: "laboratory",
-    title: "Diagnostic Labs & Testing",
-    tagline: "Certified laboratory diagnostics, sample processing, and readable digital reports.",
-    description:
-      "HEALIX Diagnostics brings clarity to healthcare through modern laboratory science, rigorous quality standards, and patient-first report design. Accurate diagnostic insights pave the way for confident medical care.",
-    category: "Laboratory",
-    href: "/laboratory",
-    iconName: "FlaskConical",
-    features: [
-      "Comprehensive blood & metabolic health packages",
-      "Home sample collection guidance & safety",
-      "Rapid turnaround time for diagnostic reports",
-      "ISO-aligned automated diagnostic equipment",
-      "Clear, easy-to-read digital patient report formats"
-    ],
-    stats: [
-      { label: "Testing Standards", value: "ISO Aligned" },
-      { label: "Diagnostic Accuracy", value: "High Precision" },
-      { label: "Sample Processing", value: "Streamlined" }
-    ],
-    visualAccent: "from-[#0E745B] to-[#075A46]",
-    capabilities: [
-      {
-        title: "Preventive Health Panels",
-        desc: "Routine blood work, lipid profiles, liver function, and metabolic checkup suites."
-      },
-      {
-        title: "Specialized Biomarker Testing",
-        desc: "Hormonal assays, thyroid panels, and targeted diagnostic screenings."
-      },
-      {
-        title: "Digital Result Delivery",
-        desc: "Accessible digital reports designed for doctors and patients to review with total clarity."
-      },
-      {
-        title: "Quality Assurance Protocols",
-        desc: "Verified testing protocols adhering to strict international laboratory benchmarks."
-      }
-    ]
-  },
-  {
     id: "clinics",
     title: "Doctor Consultations & Clinics",
     tagline: "Expert general practitioners and specialist doctors in modern healthcare facilities.",
@@ -132,7 +91,7 @@ export const services: Service[] = [
       },
       {
         title: "Connected Care Network",
-        desc: "Seamless link between consulting doctors, diagnostic lab testing, and pharmacy fulfillment."
+        desc: "Seamless link between consulting doctors and pharmacy fulfillment."
       }
     ]
   }

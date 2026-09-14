@@ -1,20 +1,19 @@
-# HEALIX — Modern Healthcare Ecosystem Website
+# HEALIX CARE — Modern Pharmacy Website
 
 > **"Better Health Begins Here."**
 
-A premium, production-ready corporate showcase and portfolio website for **HEALIX** — a modern healthcare ecosystem connecting **Pharmacy**, **Laboratory Diagnostics**, and **Clinical Care** through a trusted, human-centered experience.
+A premium, production-ready corporate website for **HEALIX CARE** — a modern pharmacy-first healthcare brand providing verified medications, everyday health essentials, and certified advisory.
 
 ---
 
 ## 1. Project Identity & Purpose
 
-Healix is intentionally a **portfolio / brand showcase website**. It presents the Healix vision, service capabilities, case studies, and healthcare insights.
+Healix Care is a **pharmacy-first brand presentation website**. It presents the Healix Care vision, pharmacy services, verified health products, case studies, and healthcare insights.
 
 ### Included in Version 1:
-- Brand presentation & Healix X visual identity system
+- Brand presentation & Healix Care visual identity system
 - Pharmacy showcase (advisory care, safety protocols, wellness supplies)
-- Laboratory & Diagnostics showcase (ISO quality standards, clear biomarker reports)
-- Clinics showcase (primary family care, unhurried consultations)
+- Future Clinics direction (Coming Soon storytelling)
 - Healthcare ecosystem storytelling & 3-step care journey
 - Interactive Portfolio / Case Studies with category filtering
 - Health & Wellness Insights magazine with structured takeaways
@@ -26,7 +25,7 @@ Healix is intentionally a **portfolio / brand showcase website**. It presents th
 
 ### Strictly Excluded in Version 1:
 - Shopping cart or medicine checkout
-- Prescription uploads or purchasing
+- Laboratory / Lab Diagnostics (not part of initial launch scope)
 - Patient accounts or electronic health records (EHR)
 - Real appointment booking
 - Fake doctor profiles, testimonials, awards, or medical claims
@@ -63,12 +62,10 @@ Logo colors and brand palette:
 
 | Route | Page Purpose |
 |---|---|
-| `/` | Storytelling Homepage (15 complete sections) |
+| `/` | Pharmacy-First Homepage |
 | `/about` | Brand Mission, Vision, Philosophy, Values & Future |
-| `/services` | Ecosystem Overview, Value Props & Synergy |
-| `/pharmacy` | Pharmacy Pillar Showcase (Advisory & Safety) |
-| `/laboratory` | Laboratory Diagnostics Showcase (Testing Clarity) |
-| `/clinics` | Clinical Care Showcase (Human-centered Care) |
+| `/services` | Services Overview & Pharmacy Capabilities |
+| `/pharmacy` | Pharmacy Showcase (Advisory & Safety) |
 | `/portfolio` | Interactive Gallery with Category Filters |
 | `/portfolio/[slug]` | Detailed Case Study & Status Disclaimers |
 | `/insights` | Health Journal with Category Filters |
