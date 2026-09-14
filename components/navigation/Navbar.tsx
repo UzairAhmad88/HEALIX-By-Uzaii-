@@ -8,11 +8,10 @@ import { Logo } from "@/components/ui/Logo";
 
 const links = [
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
   { label: "Pharmacy", href: "/pharmacy" },
-  { label: "Laboratory", href: "/laboratory" },
-  { label: "Clinics", href: "/clinics" },
-  { label: "Insights", href: "/insights" }
+  { label: "Services", href: "/services" },
+  { label: "Insights", href: "/insights" },
+  { label: "Contact", href: "/contact" }
 ];
 
 export function Navbar() {

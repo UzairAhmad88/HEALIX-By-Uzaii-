@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PortfolioCard } from "@/components/portfolio/PortfolioCard";
 import { projects } from "@/data/projects";
 
-const categories = ["All", "Pharmacy", "Laboratory", "Clinics", "Technology"];
+const categories = ["All", "Pharmacy", "Technology"];
 
 export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -19,17 +19,17 @@ export default function PortfolioPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[var(--healix-green)] py-20 text-white md:py-28">
+      <section className="bg-[#075A46] py-20 text-white md:py-28">
         <div className="container-healix">
           <Reveal>
             <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">
-              Case Studies & Initiatives
+              Initiatives & Concepts
             </span>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
-              Healix Ecosystem Portfolio
+              Healix Care Initiatives Portfolio
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
-              Explore our architectural case studies across pharmacy, diagnostic laboratory testing, clinical environments, and digital care infrastructure.
+              Explore our pharmacy experience design concepts, accessibility frameworks, and digital care infrastructure.
             </p>
           </Reveal>
         </div>

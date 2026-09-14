@@ -1,173 +1,137 @@
 import Link from "next/link";
-import { ArrowRight, Pill, FlaskConical, Stethoscope, CheckCircle2, Cpu } from "lucide-react";
+import { ArrowRight, Pill, CheckCircle2, Phone, Mail, Stethoscope } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ServiceCard } from "@/components/cards/ServiceCard";
-import { GeometricPattern } from "@/components/ui/GeometricPattern";
-import { services } from "@/data/services";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ecosystem Services | Pharmacy, Laboratory & Clinics",
-  description: "Explore Healix ecosystem services connecting modern pharmacy advisory, diagnostic laboratory testing, and patient-centered clinical care."
+  title: "Services Overview | Healix Care",
+  description: "Explore Healix Care services — modern pharmacy advisory, prescription guidance, and upcoming clinical care directions."
 };
 
 export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[var(--healix-green)] py-20 text-white md:py-28">
-        <GeometricPattern variant="lime" className="opacity-20" />
+      <section className="relative overflow-hidden bg-[#075A46] py-20 text-white md:py-28">
         <div className="container-healix relative z-10">
           <Reveal>
             <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">
-              Ecosystem Overview
+              Services Overview
             </span>
             <h1 className="display-title mt-6 max-w-4xl font-extrabold text-white">
-              Healthcare Designed Around You
+              Pharmacy First Healthcare Experience
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl md:leading-9">
-              Discover how Healix integrates pharmaceutical advice, diagnostic laboratory science, and primary clinical care under one connected vision.
+              Discover how Healix Care brings modern pharmacy support, verified prescription guidance, and accessible health essentials to your community.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="section-pad">
+      {/* Primary Pharmacy Focus */}
+      <section className="section-pad bg-white">
         <div className="container-healix">
           <Reveal>
             <SectionHeading
-              eyebrow="Three Core Pillars"
-              title="Integrated Healthcare Capabilities"
-              description="Each service operates with independent excellence while sharing unified patient data protocols and communication standards."
+              eyebrow="Primary Service"
+              title="Modern Pharmacy Care"
+              description="Our core operational focus is delivering trustworthy, transparent, and approachable pharmacy support."
             />
           </Reveal>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
-            {services.map((service, idx) => (
-              <Reveal key={service.id} delay={idx * 0.15}>
-                <ServiceCard
-                  icon={
-                    service.id === "pharmacy" ? (
-                      <Pill size={28} />
-                    ) : service.id === "laboratory" ? (
-                      <FlaskConical size={28} />
-                    ) : (
-                      <Stethoscope size={28} />
-                    )
-                  }
-                  category={service.category}
-                  title={service.title}
-                  description={service.description}
-                  href={service.href}
-                  features={service.features}
-                />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Synergistic User Journey */}
-      <section className="section-pad bg-[var(--healix-soft)]">
-        <div className="container-healix">
-          <Reveal>
-            <SectionHeading
-              eyebrow="How Services Work Together"
-              title="The Connected Care Advantage"
-              description="Eliminating redundant data entry and paperwork carrying between your doctor, laboratory, and pharmacist."
-              align="center"
-            />
-          </Reveal>
-
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
-            {[
-              {
-                step: "01. Clinical Visit",
-                title: "Diagnosis & Consult",
-                desc: "Your doctor reviews symptoms, orders necessary laboratory tests, or writes a prescription directly into your Healix profile."
-              },
-              {
-                step: "02. Lab Processing",
-                title: "Diagnostic Screening",
-                desc: "Laboratory technicians perform precision testing and upload clear, structured report data back to your care team."
-              },
-              {
-                step: "03. Pharmacy Delivery",
-                title: "Medication Advisory",
-                desc: "Your pharmacist verifies the dosage, checks contraindications, and provides clear usage guidance."
-              }
-            ].map(({ step, title, desc }, idx) => (
-              <Reveal key={step} delay={idx * 0.1}>
-                <div className="h-full rounded-3xl border border-[var(--healix-border)] bg-white p-8">
-                  <span className="text-xs font-black uppercase tracking-wider text-[var(--healix-green-2)]">{step}</span>
-                  <h3 className="mt-4 text-2xl font-extrabold text-[var(--healix-text)]">{title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">{desc}</p>
+          <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <Reveal>
+              <div className="rounded-[2.5rem] border border-[#D8E7E0] bg-[#F7FAF8] p-8 md:p-12">
+                <div className="grid size-14 place-items-center rounded-2xl bg-[#075A46] text-[var(--healix-lime)]">
+                  <Pill size={30} />
                 </div>
-              </Reveal>
-            ))}
+                <h3 className="mt-6 text-2xl font-extrabold text-[#10231E]">Prescription & OTC Support</h3>
+                <p className="mt-3 text-slate-600 leading-7">
+                  We combine certified pharmacist advice, transparent guidance, and medication verification to make health management simpler and safer.
+                </p>
+                <div className="mt-8">
+                  <Link
+                    href="/pharmacy"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#075A46] px-6 py-3 text-sm font-extrabold text-white transition hover:bg-[#0E745B]"
+                  >
+                    <span>View Pharmacy Details</span>
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.15}>
+              <div className="rounded-[2.5rem] border border-[#D8E7E0] bg-white p-8 shadow-sm md:p-12">
+                <h3 className="text-xl font-extrabold text-[#10231E]">What We Offer</h3>
+                <div className="mt-6 space-y-4">
+                  {[
+                    "100% authentic prescription medicines",
+                    "Certified pharmacist consultations",
+                    "Over-the-counter health & pain care",
+                    "Vitamins, supplements & nutrition",
+                    "Dermatological & personal hygiene essentials",
+                    "Chronic medication management advice"
+                  ].map((item) => (
+                    <div key={item} className="flex items-center gap-3 font-semibold text-slate-700">
+                      <CheckCircle2 className="size-5 text-[#075A46] shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
-      {/* Technology Vision */}
-      <section className="section-pad">
-        <div className="container-healix grid items-center gap-12 lg:grid-cols-2">
+      {/* Future Clinical Care (Coming Soon) */}
+      <section className="section-pad bg-[#F7FAF8]">
+        <div className="container-healix">
           <Reveal>
-            <div>
-              <span className="rounded-full bg-[var(--healix-pale)] px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[var(--healix-green-2)]">
-                Technology Vision
+            <div className="mx-auto max-w-3xl rounded-[2.5rem] border border-[#D8E7E0] bg-white p-8 text-center shadow-sm md:p-12">
+              <div className="mx-auto grid size-14 place-items-center rounded-2xl bg-[#EAF4EF] text-[#075A46]">
+                <Stethoscope size={28} />
+              </div>
+              <span className="mt-6 inline-block rounded-full bg-[var(--healix-lime)] px-3.5 py-1 text-xs font-extrabold uppercase tracking-widest text-[#10231E]">
+                COMING SOON
               </span>
-              <h2 className="section-title mt-4">Future-Ready Healthcare Infrastructure</h2>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                While Healix currently acts as an informational showcase, our underlying technical blueprint is designed for modular expansion into telemedicine, digital lab booking, and electronic health record integration.
+              <h2 className="mt-4 text-2xl font-extrabold text-[#10231E] md:text-3xl">More care is coming.</h2>
+              <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-slate-600">
+                Healix Care is growing beyond pharmacy, with clinical care planned as part of our future healthcare journey.
               </p>
-
-              <div className="mt-8 space-y-3.5">
-                {[
-                  "HIPAA & GDPR compliant data privacy architecture",
-                  "Modular microservice APIs for third-party lab & pharmacy sync",
-                  "Consent-driven record sharing controlled entirely by the patient"
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 font-semibold text-slate-700">
-                    <CheckCircle2 className="size-5 shrink-0 text-[var(--healix-green)]" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.15}>
-            <div className="rounded-[2.5rem] bg-[var(--healix-green)] p-10 text-white shadow-xl md:p-14">
-              <div className="grid size-16 place-items-center rounded-2xl bg-[var(--healix-lime)] text-[var(--healix-green)]">
-                <Cpu size={32} />
-              </div>
-              <h3 className="mt-6 text-2xl font-extrabold">Extensible Platform Blueprint</h3>
-              <p className="mt-3 leading-7 text-white/75">
-                Built with modern React Server Components, Next.js App Router, and strict TypeScript types to support high availability and secure data transmission.
-              </p>
-              <div className="mt-8 rounded-2xl bg-white/10 p-6 backdrop-blur">
-                <p className="text-xs font-mono text-[var(--healix-lime)]">API Status: Ready for CMS / Provider Integration</p>
+              <div className="mt-8">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#075A46] px-7 py-3 text-sm font-extrabold text-white transition hover:bg-[#0E745B]"
+                >
+                  <span>Stay Connected</span>
+                  <ArrowRight size={16} />
+                </Link>
               </div>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-pad bg-[var(--healix-soft)]">
-        <div className="container-healix rounded-[3rem] bg-[var(--healix-green)] px-8 py-16 text-center text-white">
+      {/* Contact CTA */}
+      <section className="section-pad bg-white">
+        <div className="container-healix rounded-[3rem] bg-[#075A46] px-8 py-16 text-center text-white">
           <Reveal>
-            <h2 className="text-3xl font-extrabold md:text-5xl">Explore Specific Pillars</h2>
-            <p className="mx-auto mt-4 max-w-xl text-white/75">
-              Deep-dive into our individual pharmacy, laboratory diagnostics, or clinical care frameworks.
+            <h2 className="text-3xl font-extrabold md:text-5xl">Have a Question About Our Services?</h2>
+            <p className="mx-auto mt-4 max-w-xl text-white/80">
+              Get in touch with the Healix Care team directly by phone or email.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/pharmacy" className="rounded-full bg-[var(--healix-lime)] px-6 py-3 font-bold text-[var(--healix-text)] hover:bg-white">Pharmacy</Link>
-              <Link href="/laboratory" className="rounded-full border border-white/30 px-6 py-3 font-bold text-white hover:bg-white/15">Laboratory</Link>
-              <Link href="/clinics" className="rounded-full border border-white/30 px-6 py-3 font-bold text-white hover:bg-white/15">Clinics</Link>
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm font-extrabold">
+              <a href="tel:+923160000000" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white backdrop-blur hover:bg-white/20">
+                <Phone size={16} className="text-[var(--healix-lime)]" />
+                <span>+92 316 0000000</span>
+              </a>
+              <a href="mailto:info@healixcare.pk" className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-white backdrop-blur hover:bg-white/20">
+                <Mail size={16} className="text-[var(--healix-lime)]" />
+                <span>info@healixcare.pk</span>
+              </a>
             </div>
           </Reveal>
         </div>

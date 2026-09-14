@@ -9,6 +9,7 @@ const contactSchema = z.object({
   name: z.string().min(2, "Full name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().optional(),
+  inquiryType: z.string().min(1, "Please select an inquiry type"),
   subject: z.string().min(3, "Subject must be at least 3 characters"),
   message: z.string().min(10, "Message must be at least 10 characters"),
   website: z.string().max(0, "Spam detected").optional() // Honeypot field
@@ -33,6 +34,7 @@ export function ContactForm() {
       name: "",
       email: "",
       phone: "",
+      inquiryType: "General Enquiry",
       subject: "",
       message: "",
       website: ""
@@ -156,6 +158,25 @@ export function ContactForm() {
               {...register("phone")}
             />
           </div>
+        </div>
+
+        {/* Inquiry Type Dropdown */}
+        <div>
+          <label htmlFor="inquiryType" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+            Inquiry Type <span className="text-red-500">*</span>
+          </label>
+          <select
+            id="inquiryType"
+            className="mt-2 w-full rounded-2xl border border-[var(--healix-border)] bg-[var(--healix-soft)] px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)]"
+            {...register("inquiryType")}
+          >
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Partnership">Partnership</option>
+            <option value="Business">Business</option>
+            <option value="Careers">Careers</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
         {/* Subject */}
