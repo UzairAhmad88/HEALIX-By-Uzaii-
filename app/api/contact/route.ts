@@ -4,8 +4,11 @@ import { z } from "zod";
 const contactSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
-  phone: z.string().optional(),
-  subject: z.string().min(3),
+  phone: z.string().min(8),
+  city: z.string().min(2),
+  budget: z.string().optional(),
+  inquiryType: z.string().min(1),
+  subject: z.string().optional(),
   message: z.string().min(10),
   website: z.string().max(0).optional()
 });
@@ -22,29 +25,27 @@ export async function POST(request: Request) {
       );
     }
 
-    const { name, email, phone, subject, message, website } = result.data;
+    const { name, email, phone, city, budget, inquiryType, subject, message, website } = result.data;
 
-    // Honeypot check
+    // Honeypot check for spam bots
     if (website && website.length > 0) {
-      return NextResponse.json({ ok: true }); // Silent drop for bots
+      return NextResponse.json({ ok: true });
     }
 
-    // Safely process submission or send via Resend if RESEND_API_KEY is configured
-    if (process.env.RESEND_API_KEY) {
-      // In production, integrate with Resend API:
-      // await resend.emails.send({ ... })
-    } else {
-      console.log("Healix contact inquiry logged (Development Mode):", {
-        name,
-        email,
-        phone,
-        subject,
-        message,
-        timestamp: new Date().toISOString()
-      });
-    }
+    // Log contact inquiry safely in server console
+    console.log("Healix contact inquiry received:", {
+      name,
+      email,
+      phone,
+      city,
+      budget: budget || "Not specified",
+      inquiryType,
+      subject: subject || inquiryType,
+      message,
+      timestamp: new Date().toISOString()
+    });
 
-    return NextResponse.json({ ok: true, message: "Inquiry received" });
+    return NextResponse.json({ ok: true, message: "Inquiry received successfully" });
   } catch {
     return NextResponse.json(
       { error: "Internal server error. Please try again later." },

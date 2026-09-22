@@ -9,6 +9,7 @@ import { Logo } from "@/components/ui/Logo";
 const links = [
   { label: "About", href: "/about" },
   { label: "Pharmacy", href: "/pharmacy" },
+  { label: "Franchise", href: "/pharmacy-franchise" },
   { label: "Services", href: "/services" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" }
@@ -40,7 +41,7 @@ export function Navbar() {
       }`}
     >
       <nav className="container-healix flex h-20 items-center justify-between" aria-label="Main Navigation">
-        {/* Logo - Always High Contrast Dark Variant */}
+        {/* Logo */}
         <Logo variant="dark" size="md" onClick={() => setOpen(false)} />
 
         {/* Desktop Navigation Links */}

@@ -1,32 +1,46 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useSearchParams } from "next/navigation";
 import { z } from "zod";
-import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Send, CheckCircle2, AlertCircle, Loader2, Building2 } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Full name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
-  phone: z.string().optional(),
+  phone: z.string().min(8, "Please enter a valid mobile number"),
+  city: z.string().min(2, "City is required"),
+  budget: z.string().optional(),
   inquiryType: z.string().min(1, "Please select an inquiry type"),
-  subject: z.string().min(3, "Subject must be at least 3 characters"),
+  subject: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
   website: z.string().max(0, "Spam detected").optional() // Honeypot field
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
 
-export function ContactForm() {
+interface ContactFormProps {
+  initialInquiryType?: string;
+}
+
+export function ContactForm({ initialInquiryType }: ContactFormProps) {
+  const searchParams = useSearchParams();
+  const typeParam = searchParams.get("type");
+
   const [serverState, setServerState] = useState<{
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
 
+  const isFranchiseDefault = initialInquiryType === "Pharmacy Franchisee" || typeParam === "franchise";
+
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
+    watch,
     setError,
     formState: { errors, isSubmitting }
   } = useForm<ContactFormValues>({
@@ -34,17 +48,27 @@ export function ContactForm() {
       name: "",
       email: "",
       phone: "",
-      inquiryType: "General Enquiry",
-      subject: "",
+      city: "",
+      budget: "Prefer to discuss",
+      inquiryType: isFranchiseDefault ? "Pharmacy Franchisee" : "General Enquiry",
+      subject: isFranchiseDefault ? "Pharmacy Franchise Information Request" : "",
       message: "",
       website: ""
     }
   });
 
+  const selectedInquiryType = watch("inquiryType");
+
+  useEffect(() => {
+    if (typeParam === "franchise") {
+      setValue("inquiryType", "Pharmacy Franchisee");
+      setValue("subject", "Pharmacy Franchise Information Request");
+    }
+  }, [typeParam, setValue]);
+
   const onSubmit = async (data: ContactFormValues) => {
     setServerState({ type: null, message: "" });
 
-    // Client-side Zod validation pass
     const validation = contactSchema.safeParse(data);
     if (!validation.success) {
       validation.error.issues.forEach((issue) => {
@@ -68,7 +92,9 @@ export function ContactForm() {
       if (res.ok && json.ok) {
         setServerState({
           type: "success",
-          message: "Thank you — your message has been received. Our team will follow up shortly."
+          message: data.inquiryType === "Pharmacy Franchisee"
+            ? "Thank you for your interest in Healix Care. Your franchise enquiry has been received. Our team will get in touch with you."
+            : "Thank you — your message has been received. Our team will follow up shortly."
         });
         reset();
       } else {
@@ -88,14 +114,23 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[2.5rem] border border-[var(--healix-border)] bg-white p-8 shadow-xl md:p-12"
+      className="rounded-[2.5rem] border border-[#D8E7E0] bg-white p-8 shadow-xl md:p-12"
       noValidate
       aria-label="Contact Form"
     >
-      <h2 className="text-2xl font-extrabold text-[var(--healix-text)]">Send an Inquiry</h2>
-      <p className="mt-2 text-sm text-slate-600">Fill out the details below and the Healix team will respond.</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-2xl font-extrabold text-[#10231E]">Send an Inquiry</h2>
+          <p className="mt-1 text-xs text-slate-600">Provide your contact details below and our team will get back to you.</p>
+        </div>
+        {selectedInquiryType === "Pharmacy Franchisee" && (
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--healix-lime)] px-3 py-1 text-[11px] font-black uppercase text-[#10231E]">
+            <Building2 size={13} /> Franchise Inquiry
+          </span>
+        )}
+      </div>
 
-      {/* Honeypot Anti-Spam Field */}
+      {/* Anti-Spam Field */}
       <input
         type="text"
         tabIndex={-1}
@@ -107,33 +142,33 @@ export function ContactForm() {
       <div className="mt-8 space-y-5">
         {/* Full Name */}
         <div>
-          <label htmlFor="name" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+          <label htmlFor="name" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
             Full Name <span className="text-red-500">*</span>
           </label>
           <input
             id="name"
             type="text"
-            placeholder="Dr. Sarah Jenkins"
-            className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)] ${
-              errors.name ? "border-red-400 bg-red-50/20" : "border-[var(--healix-border)] bg-[var(--healix-soft)]"
+            placeholder="e.g. Dr. Muhammad Ali"
+            className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
+              errors.name ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
             }`}
             {...register("name", { required: "Full name is required" })}
           />
           {errors.name && <p className="mt-1 text-xs font-medium text-red-600">{errors.name.message}</p>}
         </div>
 
-        {/* Email & Phone Grid */}
+        {/* Email Address & Mobile Number */}
         <div className="grid gap-5 sm:grid-cols-2">
           <div>
-            <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+            <label htmlFor="email" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
               Email Address <span className="text-red-500">*</span>
             </label>
             <input
               id="email"
               type="email"
-              placeholder="sarah@example.com"
-              className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)] ${
-                errors.email ? "border-red-400 bg-red-50/20" : "border-[var(--healix-border)] bg-[var(--healix-soft)]"
+              placeholder="name@example.com"
+              className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
+                errors.email ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
               }`}
               {...register("email", {
                 required: "Email is required",
@@ -147,66 +182,92 @@ export function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
-              Phone Number <span className="text-slate-400 font-normal">(Optional)</span>
+            <label htmlFor="phone" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
+              Mobile Number <span className="text-red-500">*</span>
             </label>
             <input
               id="phone"
               type="tel"
-              placeholder="+1 (555) 000-0000"
-              className="mt-2 w-full rounded-2xl border border-[var(--healix-border)] bg-[var(--healix-soft)] px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)]"
-              {...register("phone")}
+              placeholder="+92 316 0000000"
+              className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
+                errors.phone ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
+              }`}
+              {...register("phone", { required: "Mobile number is required" })}
             />
+            {errors.phone && <p className="mt-1 text-xs font-medium text-red-600">{errors.phone.message}</p>}
           </div>
         </div>
 
-        {/* Inquiry Type Dropdown */}
-        <div>
-          <label htmlFor="inquiryType" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
-            Inquiry Type <span className="text-red-500">*</span>
-          </label>
-          <select
-            id="inquiryType"
-            className="mt-2 w-full rounded-2xl border border-[var(--healix-border)] bg-[var(--healix-soft)] px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)]"
-            {...register("inquiryType")}
-          >
-            <option value="General Enquiry">General Enquiry</option>
-            <option value="Pharmacy">Pharmacy</option>
-            <option value="Partnership">Partnership</option>
-            <option value="Business">Business</option>
-            <option value="Careers">Careers</option>
-            <option value="Other">Other</option>
-          </select>
+        {/* City & Inquiry Type */}
+        <div className="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label htmlFor="city" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
+              City <span className="text-red-500">*</span>
+            </label>
+            <input
+              id="city"
+              type="text"
+              placeholder="Which city are you interested in?"
+              className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
+                errors.city ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
+              }`}
+              {...register("city", { required: "City is required" })}
+            />
+            {errors.city && <p className="mt-1 text-xs font-medium text-red-600">{errors.city.message}</p>}
+          </div>
+
+          <div>
+            <label htmlFor="inquiryType" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
+              Inquiry Type <span className="text-red-500">*</span>
+            </label>
+            <select
+              id="inquiryType"
+              className="mt-2 w-full rounded-2xl border border-[#D8E7E0] bg-[#F7FAF8] px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46]"
+              {...register("inquiryType")}
+            >
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Everyday Pharmacy">Everyday Pharmacy</option>
+              <option value="Pharmacy Franchisee">Pharmacy Franchisee</option>
+              <option value="Clinical Care — Coming Soon">Clinical Care — Coming Soon</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
         </div>
 
-        {/* Subject */}
+        {/* Budget Field (Shown prominently for Franchise & General inquiries) */}
         <div>
-          <label htmlFor="subject" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
-            Subject <span className="text-red-500">*</span>
+          <label htmlFor="budget" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
+            Estimated Investment Budget <span className="text-slate-400 font-normal">(For Franchise & Business Inquiries)</span>
           </label>
-          <input
-            id="subject"
-            type="text"
-            placeholder="Ecosystem Partnership Inquiry"
-            className={`mt-2 w-full rounded-2xl border px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)] ${
-              errors.subject ? "border-red-400 bg-red-50/20" : "border-[var(--healix-border)] bg-[var(--healix-soft)]"
-            }`}
-            {...register("subject", { required: "Subject is required" })}
-          />
-          {errors.subject && <p className="mt-1 text-xs font-medium text-red-600">{errors.subject.message}</p>}
+          <select
+            id="budget"
+            className="mt-2 w-full rounded-2xl border border-[#D8E7E0] bg-[#F7FAF8] px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46]"
+            {...register("budget")}
+          >
+            <option value="Prefer to discuss">Prefer to discuss</option>
+            <option value="Under PKR 5 Million">Under PKR 5 Million</option>
+            <option value="PKR 5–10 Million">PKR 5–10 Million</option>
+            <option value="PKR 10–15 Million">PKR 10–15 Million</option>
+            <option value="PKR 15–20 Million">PKR 15–20 Million</option>
+            <option value="PKR 20 Million+">PKR 20 Million+</option>
+          </select>
         </div>
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-xs font-bold uppercase tracking-wider text-slate-700">
+          <label htmlFor="message" className="block text-xs font-extrabold uppercase tracking-wider text-slate-700">
             Message <span className="text-red-500">*</span>
           </label>
           <textarea
             id="message"
-            rows={5}
-            placeholder="Tell us about your healthcare project, inquiry, or partnership vision..."
-            className={`mt-2 w-full resize-y rounded-2xl border px-4 py-3.5 text-sm text-[var(--healix-text)] outline-none transition focus:border-[var(--healix-green)] ${
-              errors.message ? "border-red-400 bg-red-50/20" : "border-[var(--healix-border)] bg-[var(--healix-soft)]"
+            rows={4}
+            placeholder={
+              selectedInquiryType === "Pharmacy Franchisee"
+                ? "Please share any specific details regarding location, timeline, or franchise questions..."
+                : "How can Healix Care assist you?"
+            }
+            className={`mt-2 w-full resize-y rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
+              errors.message ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
             }`}
             {...register("message", {
               required: "Message is required",
@@ -221,16 +282,16 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--healix-green)] py-4 text-base font-extrabold text-white transition-all hover:bg-[var(--healix-green-2)] hover:shadow-lg disabled:opacity-60"
+        className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#075A46] py-4 text-base font-extrabold text-white transition-all hover:bg-[#0E745B] hover:shadow-lg disabled:opacity-60"
       >
         {isSubmitting ? (
           <>
             <Loader2 className="size-5 animate-spin" />
-            <span>Sending Message...</span>
+            <span>Sending Inquiry...</span>
           </>
         ) : (
           <>
-            <span>Start Conversation</span>
+            <span>{selectedInquiryType === "Pharmacy Franchisee" ? "Submit Franchise Request" : "Send Inquiry"}</span>
             <Send size={18} />
           </>
         )}

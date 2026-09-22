@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
-import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -36,13 +36,16 @@ export function Footer() {
               <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">Navigation</h3>
               <ul className="mt-6 space-y-3.5 text-sm font-semibold text-white/75">
                 <li>
-                  <Link href="/about" className="transition hover:text-white">About Healix</Link>
+                  <Link href="/about" className="transition hover:text-white">About Healix Care</Link>
                 </li>
                 <li>
-                  <Link href="/pharmacy" className="transition hover:text-white">Pharmacy Services</Link>
+                  <Link href="/pharmacy" className="transition hover:text-white">Everyday Pharmacy</Link>
                 </li>
                 <li>
-                  <Link href="/services" className="transition hover:text-white">Healthcare Overview</Link>
+                  <Link href="/pharmacy-franchise" className="transition hover:text-white">Pharmacy Franchisee</Link>
+                </li>
+                <li>
+                  <Link href="/services" className="transition hover:text-white">Services Overview</Link>
                 </li>
                 <li>
                   <Link href="/insights" className="transition hover:text-white">Health Insights</Link>
@@ -57,14 +60,17 @@ export function Footer() {
               <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">Care Focus</h3>
               <ul className="mt-6 space-y-3.5 text-sm font-semibold text-white/75">
                 <li>
-                  <Link href="/pharmacy" className="transition hover:text-white">Everyday Pharmacy</Link>
+                  <Link href="/pharmacy" className="transition hover:text-white">01 Everyday Pharmacy</Link>
                 </li>
                 <li>
-                  <Link href="/pharmacy" className="transition hover:text-white">Prescription & OTC Support</Link>
+                  <Link href="/pharmacy-franchise" className="transition hover:text-white">02 Pharmacy Franchisee</Link>
+                </li>
+                <li>
+                  <Link href="/pharmacy#medicine-range" className="transition hover:text-white">Medicine Range</Link>
                 </li>
                 <li>
                   <span className="inline-flex items-center gap-2 text-white/50 cursor-default">
-                    <span>Clinical Care</span>
+                    <span>03 Clinical Care</span>
                     <span className="rounded-full bg-[var(--healix-lime)]/20 px-2 py-0.5 text-[10px] font-extrabold uppercase text-[var(--healix-lime)]">Coming Soon</span>
                   </span>
                 </li>
@@ -75,7 +81,7 @@ export function Footer() {
 
         {/* Bottom Legal bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs font-semibold text-white/50 sm:flex-row">
-          <p>© 2026 Healix. All rights reserved.</p>
+          <p>© 2026 Healix Care. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="transition hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="transition hover:text-white">Terms & Conditions</Link>
