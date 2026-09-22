@@ -1,17 +1,17 @@
-# HEALIX CARE — Modern Pharmacy Website
+# HEALIX — Modern Pharmacy Website
 
 > **"Better Health Begins Here."**
 
-A premium, production-ready corporate website for **HEALIX CARE** — a modern pharmacy-first healthcare brand providing verified medications, everyday health essentials, and certified advisory.
+A premium, production-ready corporate website for **HEALIX** — a modern pharmacy-first healthcare brand providing verified medications, everyday health essentials, and certified advisory.
 
 ---
 
 ## 1. Project Identity & Purpose
 
-Healix Care is a **pharmacy-first brand presentation website**. It presents the Healix Care vision, pharmacy services, verified health products, case studies, and healthcare insights.
+Healix is a **pharmacy-first brand presentation website**. It presents the Healix vision, pharmacy services, verified health products, case studies, and healthcare insights.
 
 ### Included in Version 1:
-- Brand presentation & Healix Care visual identity system
+- Brand presentation & Healix visual identity system
 - Pharmacy showcase (advisory care, safety protocols, wellness supplies)
 - Future Clinics direction (Coming Soon storytelling)
 - Healthcare ecosystem storytelling & 3-step care journey

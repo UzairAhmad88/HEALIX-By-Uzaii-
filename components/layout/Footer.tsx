@@ -36,7 +36,7 @@ export function Footer() {
               <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[var(--healix-lime)]">Navigation</h3>
               <ul className="mt-6 space-y-3.5 text-sm font-semibold text-white/75">
                 <li>
-                  <Link href="/about" className="transition hover:text-white">About Healix Care</Link>
+                  <Link href="/about" className="transition hover:text-white">About Healix</Link>
                 </li>
                 <li>
                   <Link href="/pharmacy" className="transition hover:text-white">Everyday Pharmacy</Link>
@@ -81,7 +81,7 @@ export function Footer() {
 
         {/* Bottom Legal bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs font-semibold text-white/50 sm:flex-row">
-          <p>© 2026 Healix Care. All rights reserved.</p>
+          <p>© 2026 Healix. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="transition hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="transition hover:text-white">Terms & Conditions</Link>

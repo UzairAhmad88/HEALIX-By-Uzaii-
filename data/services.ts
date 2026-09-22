@@ -41,9 +41,9 @@ export const services: Service[] = [
     id: "pharmacy-franchisee",
     number: "02",
     title: "PHARMACY FRANCHISEE",
-    tagline: "A modern pharmacy franchising opportunity supported by Healix Care's business, operational and technology model.",
+    tagline: "A modern pharmacy franchising opportunity supported by Healix's business, operational and technology model.",
     description:
-      "Join the Healix Care pharmacy franchise model and build a modern pharmacy business with structured support across setup, site evaluation, staff training, initial stock fulfillment, and technology.",
+      "Join the Healix pharmacy franchise model and build a modern pharmacy business with structured support across setup, site evaluation, staff training, initial stock fulfillment, and technology.",
     category: "Pharmacy Franchisee",
     href: "/pharmacy-franchise",
     ctaText: "Explore Franchise",
@@ -65,9 +65,9 @@ export const services: Service[] = [
     id: "clinical-care",
     number: "03",
     title: "CLINICAL CARE",
-    tagline: "Future clinical care services as Healix Care continues to grow.",
+    tagline: "Future clinical care services as Healix continues to grow.",
     description:
-      "Looking ahead, Healix Care plans to integrate clinical consultations and healthcare services alongside our pharmacy network to bring care even closer to families.",
+      "Looking ahead, Healix plans to integrate clinical consultations and healthcare services alongside our pharmacy network to bring care even closer to families.",
     category: "Clinical Care",
     href: "/contact",
     ctaText: "Coming Soon",

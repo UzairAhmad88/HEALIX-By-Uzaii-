@@ -14,7 +14,7 @@ export function FranchiseOverviewSection() {
               <span className="rounded-full bg-[#EAF4EF] px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#0E745B] border border-[#D8E7E0]">
                 Franchise Opportunity
               </span>
-              <h2 className="section-title mt-4 text-[#10231E]">Build your pharmacy with Healix Care.</h2>
+              <h2 className="section-title mt-4 text-[#10231E]">Build your pharmacy with Healix.</h2>
             </div>
             <Link
               href="/pharmacy-franchise"
@@ -31,10 +31,10 @@ export function FranchiseOverviewSection() {
           {/* Left Intro Text & CTA */}
           <Reveal className="lg:col-span-7">
             <p className="text-lg leading-8 text-slate-600">
-              Join the Healix Care pharmacy franchise model and build a modern pharmacy business with structured support across setup, location guidance, staff training, inventory systems, and technology.
+              Join the Healix pharmacy franchise model and build a modern pharmacy business with structured support across setup, location guidance, staff training, inventory systems, and technology.
             </p>
             <p className="mt-4 text-base leading-7 text-slate-600">
-              From initial site selection to ongoing software and operational support, Healix Care delivers a complete operational framework so you can focus on serving your community.
+              From initial site selection to ongoing software and operational support, Healix delivers a complete operational framework so you can focus on serving your community.
             </p>
 
             {/* Quick Feature Pillars */}
@@ -82,7 +82,7 @@ export function FranchiseOverviewSection() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/pharmacy-franchise.jpg"
-                  alt="Healix Care Pharmacy Franchise Opportunity"
+                  alt="Healix Pharmacy Franchise Opportunity"
                   fill
                   sizes="(max-width: 1024px) 100vw, 460px"
                   className="object-cover"

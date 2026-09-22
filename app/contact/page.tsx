@@ -5,8 +5,8 @@ import { Mail, Phone, Building2 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Franchise Enquiry | Healix Care",
-  description: "Connect with Healix Care for pharmacy support, franchise inquiries, partnerships, and general information."
+  title: "Contact Us & Franchise Enquiry | Healix",
+  description: "Connect with Healix for pharmacy support, franchise inquiries, partnerships, and general information."
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <Building2 size={16} /> Pharmacy Franchise Inquiries
               </div>
               <p className="mt-2 text-xs leading-5 text-slate-600">
-                To request information about opening a Healix Care pharmacy franchise, please fill in your target city, mobile number, and estimated budget range in the form.
+                To request information about opening a Healix pharmacy franchise, please fill in your target city, mobile number, and estimated budget range in the form.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
                   >
                     +92 316 0000000
                   </a>
-                  <p className="mt-1 text-xs text-slate-500">Call Healix Care for direct inquiries.</p>
+                  <p className="mt-1 text-xs text-slate-500">Call Healix for direct inquiries.</p>
                 </div>
               </div>
 

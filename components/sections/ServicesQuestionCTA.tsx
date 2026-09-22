@@ -17,7 +17,7 @@ export function ServicesQuestionCTA() {
                   Have a question about our services?
                 </h2>
                 <p className="mt-3 text-base text-white/80 leading-7">
-                  Speak with the Healix Care team for guidance on everyday pharmacy needs, franchise opportunities, or general healthcare inquiries.
+                  Speak with the Healix team for guidance on everyday pharmacy needs, franchise opportunities, or general healthcare inquiries.
                 </p>
 
                 <div className="mt-6 flex flex-wrap items-center gap-6 text-xs font-bold text-white/90">
@@ -37,7 +37,7 @@ export function ServicesQuestionCTA() {
                   href="/contact"
                   className="group inline-flex items-center gap-3 rounded-full bg-[var(--healix-lime)] px-8 py-4 text-base font-extrabold text-[#10231E] transition-all duration-200 hover:bg-white hover:shadow-xl"
                 >
-                  <span>Contact Healix Care</span>
+                  <span>Contact Healix</span>
                   <ArrowRight size={18} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
               </div>

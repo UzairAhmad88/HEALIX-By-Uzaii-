@@ -8,8 +8,8 @@ import { ServicesQuestionCTA } from "@/components/sections/ServicesQuestionCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services Overview | Healix Care",
-  description: "Explore Healix Care services — Everyday Pharmacy, Pharmacy Franchisee opportunities, and upcoming clinical care directions."
+  title: "Services Overview | Healix",
+  description: "Explore Healix services — Everyday Pharmacy, Pharmacy Franchisee opportunities, and upcoming clinical care directions."
 };
 
 export default function ServicesPage() {
@@ -26,7 +26,7 @@ export default function ServicesPage() {
               Pharmacy First Healthcare Experience
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl md:leading-9">
-              Discover how Healix Care brings modern pharmacy support, authentic medication guidance, and structured franchising opportunities to local communities.
+              Discover how Healix brings modern pharmacy support, authentic medication guidance, and structured franchising opportunities to local communities.
             </p>
           </Reveal>
         </div>

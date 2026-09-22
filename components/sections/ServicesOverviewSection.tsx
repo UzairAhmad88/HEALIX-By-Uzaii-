@@ -74,7 +74,7 @@ export function ServicesOverviewSection() {
 
                 <h3 className="mt-6 text-2xl font-black text-[#10231E]">PHARMACY FRANCHISEE</h3>
                 <p className="mt-4 text-base leading-7 text-slate-600">
-                  A modern pharmacy franchising opportunity supported by Healix Care&apos;s business, operational and technology model.
+                  A modern pharmacy franchising opportunity supported by Healix&apos;s business, operational and technology model.
                 </p>
 
                 <ul className="mt-6 space-y-2.5 text-xs font-semibold text-slate-700">
@@ -118,7 +118,7 @@ export function ServicesOverviewSection() {
 
                 <h3 className="mt-6 text-2xl font-black text-slate-700">CLINICAL CARE</h3>
                 <p className="mt-4 text-base leading-7 text-slate-500">
-                  Future clinical care services as Healix Care continues to grow.
+                  Future clinical care services as Healix continues to grow.
                 </p>
 
                 <p className="mt-6 text-xs text-slate-500 leading-5 italic">

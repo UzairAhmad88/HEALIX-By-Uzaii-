@@ -30,7 +30,7 @@ export default function HomePage() {
       <aside aria-label="Brand Announcement" className="bg-[var(--healix-lime)] py-2.5 text-center text-xs font-black uppercase tracking-[0.18em] text-[#10231E]">
         <div className="container-healix flex items-center justify-center gap-2">
           <Activity size={14} />
-          <span>Introducing Healix Care — A Modern Pharmacy & Franchise Network</span>
+          <span>Introducing Healix — A Modern Pharmacy & Franchise Network</span>
           <span className="hidden sm:inline">· Professional Support · Community Healthcare</span>
         </div>
       </aside>
@@ -41,7 +41,7 @@ export default function HomePage() {
           {/* Left Hero Content */}
           <Reveal direction="up" className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[var(--healix-lime)] backdrop-blur-md">
-              <Activity size={14} /> HEALIX CARE
+              <Activity size={14} /> HEALIX
             </div>
 
             <h1 className="display-title mt-6 max-w-3xl font-extrabold tracking-tight text-white leading-[1.04]">
@@ -94,7 +94,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/pharmacy-interior.jpg"
-                  alt="Modern Healix Care pharmacy environment"
+                  alt="Modern Healix pharmacy environment"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 500px"
@@ -116,11 +116,11 @@ export default function HomePage() {
         <div className="container-healix">
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="rounded-full bg-[#EAF4EF] px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#0E745B] border border-[#D8E7E0]">
-              Healix Care Pharmacy
+              Healix Pharmacy
             </span>
             <h2 className="section-title mt-4 text-[#10231E]">Your everyday healthcare, closer to you.</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Healix Care brings a modern pharmacy experience together with professional support, everyday health essentials and a focus on the communities we serve.
+              Healix brings a modern pharmacy experience together with professional support, everyday health essentials and a focus on the communities we serve.
             </p>
           </Reveal>
         </div>
@@ -136,13 +136,13 @@ export default function HomePage() {
         description="Comprehensive healthcare essentials, prescription fulfillment, over-the-counter care, and wellness supplies."
       />
 
-      {/* 05 WHY HEALIX CARE */}
+      {/* 05 WHY HEALIX */}
       <section className="section-pad bg-[#F7FAF8]">
         <div className="container-healix">
           <Reveal>
             <SectionHeading
               eyebrow="Our Principles"
-              title="Why Healix Care?"
+              title="Why Healix?"
               description="Six core principles defining our approach to modern pharmacy care."
               align="center"
             />

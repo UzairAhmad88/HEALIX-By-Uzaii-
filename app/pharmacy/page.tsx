@@ -9,8 +9,8 @@ import { ServicesQuestionCTA } from "@/components/sections/ServicesQuestionCTA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Everyday Pharmacy Services | Healix Care",
-  description: "Discover Healix Care Everyday Pharmacy — medication advisory, authentic prescription fulfillment, and complete medicine range."
+  title: "Everyday Pharmacy Services | Healix",
+  description: "Discover Healix Everyday Pharmacy — medication advisory, authentic prescription fulfillment, and complete medicine range."
 };
 
 export default function PharmacyPage() {
@@ -41,7 +41,7 @@ export default function PharmacyPage() {
               <span className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0E745B]">Pharmacy Overview</span>
               <h2 className="section-title mt-3">Rx Guidance Without Confusion</h2>
               <p className="mt-6 text-lg leading-8 text-slate-600">
-                Taking prescribed medication should never feel confusing. Healix Care Pharmacy provides clear visual dosage schedules, side-effect explanations, and private pharmacist consultations.
+                Taking prescribed medication should never feel confusing. Healix Pharmacy provides clear visual dosage schedules, side-effect explanations, and private pharmacist consultations.
               </p>
               <div className="mt-8 space-y-3.5">
                 {[
@@ -95,7 +95,7 @@ export default function PharmacyPage() {
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EAF4EF] px-3.5 py-1 text-xs font-extrabold uppercase text-[#0E745B] border border-[#D8E7E0]">
                     <Building2 size={14} /> Franchise Partnership
                   </span>
-                  <h3 className="mt-4 text-2xl font-extrabold text-[#10231E]">Interested in opening a Healix Care pharmacy?</h3>
+                  <h3 className="mt-4 text-2xl font-extrabold text-[#10231E]">Interested in opening a Healix pharmacy?</h3>
                   <p className="mt-2 text-sm text-slate-600 max-w-xl">
                     Explore our structured pharmacy franchising model with full setup guidance, staff training, and software support.
                   </p>

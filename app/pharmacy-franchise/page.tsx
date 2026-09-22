@@ -19,8 +19,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Franchise Opportunity | Healix Care",
-  description: "Join the Healix Care pharmacy franchise model and build a modern pharmacy business with end-to-end setup, operational, and technology support."
+  title: "Pharmacy Franchise Opportunity | Healix",
+  description: "Join the Healix pharmacy franchise model and build a modern pharmacy business with end-to-end setup, operational, and technology support."
 };
 
 export default function PharmacyFranchisePage() {
@@ -36,11 +36,11 @@ export default function PharmacyFranchisePage() {
 
             <h1 className="display-title mt-6 max-w-3xl font-extrabold tracking-tight text-white leading-[1.04]">
               Build your pharmacy with <br className="hidden sm:inline" />
-              <span className="text-[var(--healix-lime)]">Healix Care.</span>
+              <span className="text-[var(--healix-lime)]">Healix.</span>
             </h1>
 
             <p className="mt-7 max-w-xl text-lg leading-8 text-white/80 md:text-xl md:leading-9 font-medium">
-              Join the Healix Care pharmacy franchise model and build a modern pharmacy business supported across setup, site evaluation, staff training, stock fulfillment, and technology.
+              Join the Healix pharmacy franchise model and build a modern pharmacy business supported across setup, site evaluation, staff training, stock fulfillment, and technology.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -67,7 +67,7 @@ export default function PharmacyFranchisePage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem]">
                 <Image
                   src="/images/pharmacy-franchise.jpg"
-                  alt="Healix Care Franchise Storefront Environment"
+                  alt="Healix Franchise Storefront Environment"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 480px"
@@ -93,7 +93,7 @@ export default function PharmacyFranchisePage() {
             </span>
             <h2 className="section-title mt-4 text-[#10231E]">A complete operational framework for pharmacy partners.</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              From initial site selection and regulatory licensing guidance to staff training, inventory systems, technology and ongoing operational assistance, Healix Care is building a structured franchise experience for business owners and healthcare professionals.
+              From initial site selection and regulatory licensing guidance to staff training, inventory systems, technology and ongoing operational assistance, Healix is building a structured franchise experience for business owners and healthcare professionals.
             </p>
           </Reveal>
         </div>
@@ -221,7 +221,7 @@ export default function PharmacyFranchisePage() {
             <SectionHeading
               eyebrow="Franchise Questions"
               title="Frequently Asked Questions"
-              description="Clear answers regarding the Healix Care pharmacy franchise opportunity."
+              description="Clear answers regarding the Healix pharmacy franchise opportunity."
               align="center"
             />
           </Reveal>
@@ -229,8 +229,8 @@ export default function PharmacyFranchisePage() {
           <div className="mt-12 mx-auto max-w-3xl space-y-6">
             {[
               {
-                q: "What is the Healix Care pharmacy franchise model?",
-                a: "The Healix Care franchise model enables business partners to open and operate a modern pharmacy under the Healix Care brand, backed by complete setup guidance, staff training, stock support, and management technology."
+                q: "What is the Healix pharmacy franchise model?",
+                a: "The Healix franchise model enables business partners to open and operate a modern pharmacy under the Healix brand, backed by complete setup guidance, staff training, stock support, and management technology."
               },
               {
                 q: "What support is provided during setup?",

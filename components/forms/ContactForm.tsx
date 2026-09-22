@@ -93,7 +93,7 @@ export function ContactForm({ initialInquiryType }: ContactFormProps) {
         setServerState({
           type: "success",
           message: data.inquiryType === "Pharmacy Franchisee"
-            ? "Thank you for your interest in Healix Care. Your franchise enquiry has been received. Our team will get in touch with you."
+            ? "Thank you for your interest in Healix. Your franchise enquiry has been received. Our team will get in touch with you."
             : "Thank you — your message has been received. Our team will follow up shortly."
         });
         reset();
@@ -264,7 +264,7 @@ export function ContactForm({ initialInquiryType }: ContactFormProps) {
             placeholder={
               selectedInquiryType === "Pharmacy Franchisee"
                 ? "Please share any specific details regarding location, timeline, or franchise questions..."
-                : "How can Healix Care assist you?"
+                : "How can Healix assist you?"
             }
             className={`mt-2 w-full resize-y rounded-2xl border px-4 py-3.5 text-sm text-[#10231E] outline-none transition focus:border-[#075A46] ${
               errors.message ? "border-red-400 bg-red-50/20" : "border-[#D8E7E0] bg-[#F7FAF8]"
